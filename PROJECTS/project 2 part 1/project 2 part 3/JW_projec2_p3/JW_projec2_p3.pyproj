@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>15617d98-7a18-4b04-8d95-b78b98c86b88</ProjectGuid>
+    <ProjectGuid>8335b052-5e67-4b45-b1a0-e09efb63ea22</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ch_9.py</StartupFile>
+    <StartupFile>JW_projec2_p3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>ch 9</Name>
-    <RootNamespace>ch 9</RootNamespace>
+    <Name>JW_projec2_p3</Name>
+    <RootNamespace>JW_projec2_p3</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,9 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\Ch 8\8.2.1Amusement reservation\amusment_park.py">
-      <Link>amusment_park.py</Link>
-    </Compile>
+    <Compile Include="JW_projec2_p3.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
