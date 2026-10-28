@@ -43,7 +43,3 @@ print()
 #        A:accidentally put print original signals  print statement inside of loop and the -- moved to outside loop
 #
 #---- test-----
-# Enter a range of antenna signals:143 128 117 168
-# Original signals: 143 128 117 168
-# Calibrated signals: 130 128 117 130
-# Press any key to continue . . .
