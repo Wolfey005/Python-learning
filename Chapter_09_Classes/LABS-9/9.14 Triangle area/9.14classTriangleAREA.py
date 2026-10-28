@@ -1,19 +1,12 @@
-# Given class Triangle, complete the program to read and set the base and height of triangle1 and triangle2,
-#  determine which triangle's area is smaller, and output the smaller triangle's info, 
-#  making use of Triangle's relevant methods.
+# """
+# Triangle Area Comparison
+# Author: Jenny Wolf
 
-# Ex: If the input is:
+# This program creates two Triangle objects, calculates
+# their areas using object-oriented programming principles,
+# and displays the triangle with the smaller area.
+# """
 
-# 3.0
-# 4.0
-# 4.0
-# 5.0
-# where 3.0 is triangle1's base, 4.0 is triangle1's height, 4.0 is triangle2's base, and 5.0 is triangle2's height, the output is:
-
-# Triangle with smaller area:
-# Base: 3.00
-# Height: 4.00
-# Area: 6.00
 
 class Triangle:
 
@@ -60,3 +53,21 @@ if __name__ == "__main__":
         triangle1.print_info()
     else:
         triangle2.print_info()
+
+
+# #######################------test--------################
+# Triangle area Comparison Program
+# --------------------------------
+# Enter Triangle 1 information:
+# Base: 5.0
+# Height: 2.0
+
+# Enter Triangle 2 information:
+# Base: 1.0
+# Height: 8.0
+
+# Triangle with smaller area:
+# Base: 1.00
+# Height: 8.00
+# Area: 4.00
+# Press any key to continue . . .
