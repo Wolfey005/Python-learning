@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>d09fea90-0fb5-4a64-a211-5c24590885e2</ProjectGuid>
+    <ProjectGuid>e06727f9-5a8b-4ebb-84a3-4abe67a76e3f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>_8_2_signalUpdate130_loops_modifying_list.py.py</StartupFile>
+    <StartupFile>_8_2_signalUpdate130_loops_modifying_list.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>8_2_signalUpdate130_loops_modifying list.py</Name>
-    <RootNamespace>8_2_signalUpdate130_loops_modifying list.py</RootNamespace>
+    <Name>8_2_signalUpdate130_loops_modifying list</Name>
+    <RootNamespace>8_2_signalUpdate130_loops_modifying list</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="_8_2_signalUpdate130_loops_modifying_list.py.py" />
+    <Compile Include="_8_2_signalUpdate130_loops_modifying_list.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
