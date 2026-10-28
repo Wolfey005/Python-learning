@@ -5,7 +5,7 @@
     <ProjectGuid>ab0569c7-a754-4e05-8cfa-e652a08c5d96</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>SIGNALupdate130.py.py</StartupFile>
+    <StartupFile>SIGNALupdate130.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SIGNALupdate130.py.py" />
+    <Compile Include="SIGNALupdate130.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
