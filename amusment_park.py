@@ -1,6 +1,5 @@
 # Try 8.2.1: Amusement park ride reservation system.
 
-# Full screen
 # The following (unfinished) program implements a digital line queuing system for an amusement park ride. 
 # The system allows a rider to reserve a place in line without actually having to wait. 
 # The rider simply enters a name into a program to reserve a place. 
