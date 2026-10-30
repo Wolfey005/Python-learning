@@ -1,10 +1,10 @@
-# Project name: Python Project 3 Part 1: strings
-#name :Jenny Wolf 
+# Project name: Python Project 3 Part 1: Strings
+# Name :Jenny Wolf 
 # Due date : 1 Nov 2026
 #
-#This program: 
-# 1. prompts the user to enter a sentence.
-# 2. Performs the following string operations:
+# This program: 
+#  1. prompts the user to enter a sentence.
+#  2. Performs the following string operations:
 #     - Displays the first 5 characters of the sentence
 #     - Converts the sentence to lowercase
 #     - Replaces all spaces with underscores(_).
@@ -13,25 +13,25 @@
 #######################################################################
 
 
-#user input ask for input sentence and output 
+# user input ask for input sentence and output 
 user_sentence= input("Enter a sentence: ")
 
-#slice first 5 [char] of the string  and print
+# slice first 5 [char] of the string  and print
 print(f"First 5  characters: { user_sentence[:5]}")
 
-#Convets string  to lowercase prints result
+# Convets string  to lowercase prints result
 print(f"Lowercase version: {user_sentence.lower()}")
 
-#replaces all spaces with usnderscores (_) and prints the results
-print(f"All replaced with  with underscores: {user_sentence.replace(' ','_')}")
+# replaces all spaces with usnderscores (_) and prints the results
+print(f"Spaces replaced with underscores: {user_sentence.replace(' ','_')}")
 
-#Splits the [string into a list] of words and prints the list.
+# Splits the [string into a list] of words and prints the list.
 # create a new variable since list are mutable
 words = user_sentence.split()
 
-print(f"List of words:{words}")
+print(f"List of words: {words}")
 
-#Join the list of words back to a single string, separated by hyphens (-), and prints it
+# Join the list of words back to a single string, separated by hyphens (-), and prints it
 print(f"Hyphen-joined string: {'-'.join(words)}")
 
 
