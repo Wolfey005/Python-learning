@@ -2,7 +2,6 @@
 from Artist import Artist 
 from Artwork import Artwork
 
-
 if __name__ == "__main__":
     user_artist_name = input()
     user_birth_year = int(input())
