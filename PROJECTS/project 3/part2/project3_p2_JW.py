@@ -1,7 +1,7 @@
 # Python Program 2: List and Dictionaries 
 # Name: Jenny Wolf
 # Date: October 29,2026
-#Desciption:
+# Desciption:
 #        This program asks the user to enter five items they would pack for at trip.
 #        The program stores the items in a list, sorts them alphabetically
 #        removes the last item,  adds a new item, 
@@ -12,7 +12,7 @@
 # create an empty list
 packing_list = []
 
-#1) Asks the user to input 5 items
+# Asks the user to input 5 items
 print("Enter 5 items you would pack for a trip (seperate with Enter): " )
 
 # Store these in a list. 
@@ -20,32 +20,32 @@ for number, _ in enumerate(range(5), start =1):
     item = input(f"{number}: ").title()
     packing_list.append(item)
 
-# 2 Sort the list alphabetically and print it.
+# Sort the list alphabetically and print it.
 packing_list.sort()
 print("\nSorted list:", packing_list)
 
-#3 Removes the last item from the list and prints the updated list.
+# Removes the last item from the list and prints the updated list.
 packing_list.pop()
 print(f"Updated list after removing the last item: {packing_list}")
 
-# • Adds a new item to the list and prints the updated list. ( didnt specify if userinput or predefined item)
+# Adds a new item to the list and prints the updated list. ( didnt specify if userinput or predefined item)
 packing_list.append("Backpack")
 print(f"Updated list after adding an item: {packing_list}")
 
-# 3) Creates a dictionary
+# Creates a dictionary
 packing_dict ={}
 
 for item in packing_list:
     packing_dict[item] = 1
 
-#display dictionary
+# Display dictionary
 print("\nPacked items dictionary:", packing_dict)
 for item, quantity in packing_dict.items():
     print(f"Item: {item}, Quantity: {quantity}")
 
 
 #############problems##################
-# 1Problem: 
+# 1.Problem:
 #   . I entered some of the items without capitilazton and realized that sort() isn't 
 #       sorting as expected. This occurs because Python compares the ASCII values of charactes,
 #       and  uppercase and lowercase letters have diffrent values.
@@ -53,14 +53,15 @@ for item, quantity in packing_dict.items():
 #       Use .title() when accepting user input. This creates consistent capitalizaton
 #        for all enteries, allowing the list to be sorted alphabeically
 # 2. problem:
-#       TEST:__________________
+
+#################Test run:
 # Enter 5 items you would pack for a trip (seperate with Enter):
 # 1: Tent
 # 2: flashlight
 # 3: Sleeping bag
 # 4: Food
 # 5: water
-
+#
 # Sorted list: ['Flashlight', 'Food', 'Sleeping Bag', 'Tent', 'Water']
 # Updated list after removing the last item: ['Flashlight', 'Food', 'Sleeping Bag', 'Tent']
 # Updated list after adding an item: ['Flashlight', 'Food', 'Sleeping Bag', 'Tent', 'Backpack']
@@ -71,4 +72,4 @@ for item, quantity in packing_dict.items():
 # Item: Sleeping Bag, Quantity: 1
 # Item: Tent, Quantity: 1
 # Item: Backpack, Quantity: 1
-# Press any key to continue . . .
+# Press any key to continue 

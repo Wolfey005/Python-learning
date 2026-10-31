@@ -1,0 +1,29 @@
+Python Program 2: List and Dictionaries 
+Write a program that: 
+1) Asks the user to input 5 items they would pack for a trip. Store these in a list. 
+2) Performs the following operations: 
+• Sort the list alphabetically and print it. 
+• Removes the last item from the list and prints the updated list. 
+• Adds a new item to the list and prints the updated list. 
+3) Creates a dictionary where: 
+• Keys are the packed items (from the final list). 
+• Values are the number of times each item is packed (e.g., all 1 for now). 
+4) Prints the dictionary and iterates through it to display each key-value pair. 
+Example: 
+Enter 5 items you would pack for a trip (separate with Enter):   
+	1: Tent   
+	2: Flashlight   
+	3: Sleeping bag   
+	4: Food   
+	5: Water   
+
+Sorted list: ['Flashlight', 'Food', 'Sleeping bag', 'Tent', 'Water']   
+Updated list after removing the last item: ['Flashlight', 'Food', 'Sleeping bag', 'Tent']   
+Updated list after adding an item: ['Flashlight', 'Food', 'Sleeping bag', 'Tent', 'Backpack']  
+
+Packed items dictionary: {'Flashlight': 1, 'Food': 1, 'Sleeping bag': 1, 'Tent': 1, 'Backpack': 1}   
+Item: Flashlight, Quantity: 1   
+Item: Food, Quantity: 1   
+Item: Sleeping bag, Quantity: 1   
+Item: Tent, Quantity: 1   
+Item: Backpack, Quantity: 1 
