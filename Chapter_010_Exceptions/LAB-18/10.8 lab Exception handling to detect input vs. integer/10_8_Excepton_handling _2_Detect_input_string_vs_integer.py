@@ -20,13 +20,13 @@ print ('Example: John 25')
 print('Enter "-1" to quit.')
 
 #Read first input line
-parts = input("\n Enter name and age:"). split()
+parts = input("\n Enter name and age:").split()
 name = parts[0]
 #process input until sentienl value is entered
 while name != "-1":
 	try:
 		#convert age to an integer and add 1
-		age = int(parts[1]) +1
+		age = int(parts[1]) + 1
 		print(f"{name} {age}")
 	except ValueError:
 		#Handle invalid age input
