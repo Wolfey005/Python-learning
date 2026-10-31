@@ -10,7 +10,7 @@ class Artwork:
         self.artist = artist
 
     def print_info (self):
-        self. artist.print_info()
+        self.artist.print_info()
         print(f"Title: {self.title}, {self.year_created}")
 
 

@@ -14,3 +14,16 @@ if __name__ == "__main__":
     new_artwork = Artwork(user_title, user_year_created, user_artist)
 
     new_artwork.print_info()
+
+
+
+
+#     ####TEST
+#     Banskey
+# -1
+# -1
+# Ballon girl
+# 2002
+# Artist: Banskey (unknown)
+# Title: Ballon girl, 2002
+# Press any key to continue . . .
