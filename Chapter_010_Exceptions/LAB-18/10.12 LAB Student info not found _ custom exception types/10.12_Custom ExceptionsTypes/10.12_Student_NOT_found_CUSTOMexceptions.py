@@ -16,38 +16,42 @@
 class StudentInfoError(Exception):
 
     def __init__(self, message):
-        self.message = message  # Initialize the exception message
+        #store exception message
+        self.message = message 
 
+#find and return a students id using ther name
 def find_ID(name, info):
     # check if student name exists in dictionary
     if name in info:
         return info[name]
-    #otherwise raise exception w/ custom type StudentInfoError,("Student ID not found for studentName",)
-    # student name = name of student?
+    #raise exception if name is not found
     raise StudentInfoError(f"Student ID not found for {name}")
     
-# Find a students name using ID
+# Find a and return student's name using ID
 def find_name(ID, info):
     #search for matching ID in dictionary
     for name, student_id in info.items():
         if student_id == ID:
             return name
+    #raise exception if ID is not found
     raise StudentInfoError(f"Student name not found for {ID}")
 
+#Displaly all available student names 
 def display_students(info):
     """Display all students currently in the database."""
 
     print("\n+----------------------------------+")
     print("|     Available Student Names      |")
     print("+----------------------------------+")
-
+    # Display each student currently stored in dictionary
     for student in info:
         print(f"| {student:<32} |")
 
     print("+----------------------------------+\n")
 
 if __name__ == "__main__":
-    # Dictionary of student names and IDs
+   # Dictionary containing student names (keys)
+    # and student IDs(values)
     student_info = {
         "Reagan": "rebradshaw835",
         "Ryley": "rbarber894",
@@ -55,7 +59,7 @@ if __name__ == "__main__":
         "Tyrese": "tmayo945",
         "Caius": "ccharlton329",
     }
-
+    #Display program menu
     print("\n+==================================+")
     print("|    Student Information Lookup    |")
     print("+==================================+")
@@ -64,13 +68,16 @@ if __name__ == "__main__":
     print("|    1 - Find Student Name         |")
     print("+==================================+")
 
+    # Diaplay available student names
     display_students(student_info)
 
+    #read search option from user
     userChoice = input("Enter your choice (0 or 1):")  # Read search option from user. 0: find_ID(), 1: find_name()
 
         # FIXME: find_ID() and find_name() may raise an Exception.
         #        Insert a try/except statement to catch the exception and output any exception message.
     try:
+        # Search for a student ID using a name
         if userChoice == "0":
             name = input("Enter student name: ")
             result = find_ID(name, student_info)
@@ -87,7 +94,7 @@ if __name__ == "__main__":
             print("+----------------------------------+")
             print(f"| Student Name: {result:<18} |")
             print("+----------------------------------+")
-
+       # Search for a student name using an ID
         else:
             raise StudentInfoError("Invalid menu option selected.")
         ID = input()
@@ -96,6 +103,11 @@ if __name__ == "__main__":
         print("|              ERROR               |")
         print("+----------------------------------+")
         #output exception message
-        print(excpt.message)
+        print(f"{excpt.message:<32}|")
         print("+----------------------------------+")
+
+    finally:
+        print("\n+==================================+")
+        print("|         Program Ended            |")
+        print("+==================================+")
     
