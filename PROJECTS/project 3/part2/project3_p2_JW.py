@@ -48,10 +48,10 @@ for item, quantity in packing_dict.items():
 # 1.Problem:
 #   . I entered some of the items without capitilazton and realized that sort() isn't 
 #       sorting as expected. This occurs because Python compares the ASCII values of charactes,
-#       and  uppercase and lowercase letters have diffrent values.
+#       and uppercase and lowercase letters have diffrent values.
 #  Fix: 
 #       Use .title() when accepting user input. This creates consistent capitalizaton
-#        for all enteries, allowing the list to be sorted alphabeically
+#       for all enteries, allowing the list to be sorted alphabeically
 # 2. problem:
 
 #################Test run:
