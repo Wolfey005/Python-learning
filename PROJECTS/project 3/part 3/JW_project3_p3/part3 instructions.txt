@@ -1,0 +1,20 @@
+Python Program 3: Classes 
+Write a program that: 
+1) Define a TripItem class with the following: 
+• Attributes: name (string) and quantity (integer). 
+• A constructor to initialize the attributes. 
+• A method describe() that prints: Item: [name], Quantity: [quantity]. 
+2) Asks the user to create 3 TripItem objects by entering a name and quantity for each. 
+3) Stores the objects in a list and iterates through the list to call the describe() method for 
+each object. 
+Example: 
+Enter the name of the first item: Tent   
+Enter the quantity for Tent: 1   
+Enter the name of the second item: Flashlight   
+Enter the quantity for Flashlight: 2   
+Enter the name of the third item: Food   
+Enter the quantity for Food: 5   
+Packing List:   
+Item: Tent, Quantity: 1   
+Item: Flashlight, Quantity: 2   
+Item: Food, Quantity: 5
