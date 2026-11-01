@@ -36,7 +36,7 @@ for i in range(3):
     trip_item = TripItem(input_name, input_quantity)
     # store the oject in a list
     packing_list.append(trip_item)
-print("\nPacking List:")
+print("Packing List:")
 
 # Iterate through the list of TripItem objects and call the describe() method for each object
 for item in packing_list:
