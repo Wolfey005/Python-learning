@@ -1,0 +1,26 @@
+This week, we are exploring File Handling and Inheritance in Python. File handling lets us read, write, and process external data, while inheritance allows us to create subclasses and reuse code efficiently.  
+
+
+
+• What are the key differences between reading and writing files in Python?
+	○ From what I learned in this chapter, the main difference between reading and writing files is the direction that data moves. When you read a file, you are bringing information from the file into our program. Python uses  methods like read() , readline(), and readslines() to access the files' contents after opening it in read  ("r") mode (ZyBooks ,2026).
+	○ When we write to a file, we are sending information from the program into a file so it can be stored permanently. To do this, we open the file in a mode such as write("w") or append ("a"), and  use the write() method to add content. One thing I thought was important is that write("w") mode will replace any existing contents of the file, while append ("a") adds new information to the end without deleting what is already there (Zybooks, 2026).
+	○ Another difference is that writing to a file is buffered. As I understood it, data is not always written to the disk immediately when write() is called. Instead, Python may hold the data temporarily until a new line is encountered, the file is flushed, or the file is closed.
+
+• Why is it important to properly close a file after interacting with it?
+	○ Zybooks (2026), expressed that it is important to close a file after using it. Closing a file prevents additional read or writes, releases system resources, and make sure any buffered data is saved correctly to the disk.
+
+• What is inheritance, and how does it help in organizing and reusing code?
+        ○ As described in the Zybooks learning material, inheritance is the process by which a derived class inherits the attributes and methods of a base class(Zybooks, 2026). In a store inventory example, Item serves as the  base class and contains the attributes name and quantity along with the display() method. The inventory program also contains derived class named Produce which inherits those attributes and methods from Item, allowing Produce objects  to use the display() method without having to redefine it again. The Produce class can then add its own unique attribute, expiration, while still using the attributes inherited from Item base class(Zybooks,2026).
+	○ Placing common attributes and methods in a base class and specialized features in derived classes promotes code reuse because programmers do not have to rewrite the same attributes and methods for every related class,  making programs easier to maintain, update and extend.
+ 
+• How do you access attributes and methods of a base class from a derived class?
+	○ ZyBooks (2026) explains that a derived class can access the attributes and methods of a base class through inheritance, when an attribute or method is needed, the program first looks for it in the object and then it follows the inheritance tree, which is the hierarchy connecting the derived classes to their base classes. If the attribute or method is not found in the derived class, the search continues through the base classes until it is found.
+
+1. Python Code Example:
+ This code demonstrates inheritance by using the Libro class as a base class and the Encyclopedia class as a derived class. The Libro class contains attributes (title, author, publisher, and publication_date) and a method  (print_info()) that displays libro information. The Encyclopedia class inherits from Libro through class Encyclopedia(Libro ), allowing it to reuse the base class attributes and methods. It adds its own attributes; edition and num_pages, and overrides the print_info() method to include encyclopedia-specific information. The code accesses methods and attributes from the base class by calling Libro._ init_(self, ...) to initialize inherited attributes   and Libro.print_info(self) to display the base class information before printing the new attributes.
+ 
+
+
+References
+zyBooks. (2026). CSC 1019: Introduction to Programming (Python), Chapters 12 and 13. zyBooks.
